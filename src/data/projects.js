@@ -1,5 +1,14 @@
 const projects = [
     {
+        title: "Talking Textiles",
+        date: 'Apr (2026)',
+        image: "/images/projects/tt-portfolio.jpeg",
+        category: "Machine Learning, Web Dev, Audio Production",
+        tools: "Python, PyTorch, StyleGAN2-ADA, React",
+        description: "What does it mean for a textile to talk? For my senior year capstone project, I used Machine Learning and audio storytelling to contest the history of Dutch wax print, and immerse the viewer.",
+        link: "https://talkingtextiles.vercel.app/",
+    },
+    {
         title: "Aura Points: Art Provenance",
         date: 'Nov (2025)',
         image: "/images/projects/bijinga-example.jpg",
