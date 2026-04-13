@@ -2,7 +2,7 @@ import React from 'react';
 
 const ArtworkCard = ({ project, onClick }) => (
   <div
-    className={`relative shadow-lg p-4 opacity-50 rounded-md h-80 flex items-center justify-center transform transition-transform hover:scale-105 cursor-pointer ${project.size}`}
+    className={`relative shadow-lg p-4 opacity-50 rounded-md h-80 flex items-center justify-center transform transition-transform hover:scale-[1.01] cursor-pointer ${project.size}`}
     style={{ 
       backgroundImage: `url(${project.image})`, 
       backgroundSize: 'cover', 
