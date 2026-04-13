@@ -13,7 +13,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 export default function App() {
   return (
     <BrowserRouter>
-        <PaintCanvas />
+        {process.env.REACT_APP_PAINT_CANVAS === 'true' && <PaintCanvas />}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/now" element={<Now />} />

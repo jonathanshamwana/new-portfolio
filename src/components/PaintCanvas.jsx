@@ -126,6 +126,8 @@ export default function PaintCanvas() {
       points = [];
     };
 
+    document.body.style.cursor = 'none';
+
     resize();
     window.addEventListener('resize', resize);
     document.addEventListener('mousemove', handleMouseMove);
@@ -133,6 +135,7 @@ export default function PaintCanvas() {
     document.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
+      document.body.style.cursor = '';
       cancelAnimationFrame(fadeRafId);
       cancelAnimationFrame(drawRafId);
       window.removeEventListener('resize', resize);
