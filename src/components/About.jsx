@@ -41,7 +41,14 @@ export default function About() {
 
   return (
     <section id="about" className="min-h-196 flex items-center justify-center px-5 pt-20 pb-10 bg-gray-100">
-      <div className="container max-w-5xl bg-white shadow-lg rounded-lg p-16 m-6 flex flex-col md:flex-row items-center about-container">
+      <div
+        className="container max-w-5xl rounded-2xl p-16 m-6 flex flex-col md:flex-row items-center about-container"
+        style={{
+          background: 'rgba(255, 255, 255, 0.82)',
+          border: '1px solid rgba(255, 255, 255, 0.6)',
+          boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)',
+        }}
+      >
         <div className="md:w-3/5 md:pr-8 mb-16 md:mb-0 text-center md:text-left">
           <h1 className="sm:text-4xl text-3xl mb-4 font-medium text-black hero-heading">
             Hello ello ello.
