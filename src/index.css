@@ -44,5 +44,6 @@ transform: rotateY(180deg);
 @layer base {
     body {
       background-color: #FCF5EE;
+      cursor: none;
     }
 }
