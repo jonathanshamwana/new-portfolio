@@ -20,7 +20,7 @@ export default function Header({ isHomePage }) {
     <header
       className="sticky md:sticky top-0 z-10"
       style={{
-        background: 'rgba(255, 255, 255, 0.82)',
+        background: 'rgba(255, 255, 255, 0.45)',
         borderBottom: '1px solid rgba(255, 255, 255, 0.6)',
         boxShadow: '0 2px 16px rgba(0,0,0,0.06)',
       }}

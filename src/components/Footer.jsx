@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer
       style={{
-        background: 'rgba(255, 255, 255, 0.82)',
+        background: 'rgba(255, 255, 255, 0.45)',
         borderTop: '1px solid rgba(255, 255, 255, 0.4)',
         boxShadow: '0 -2px 16px rgba(0,0,0,0.04)',
       }}
@@ -45,7 +45,7 @@ const Footer = () => {
                   bottom: '120%',
                   left: '50%',
                   transform: 'translateX(-50%)',
-                  background: 'rgba(255,255,255,0.85)',
+                  background: 'rgba(255,255,255,0.45)',
                   backdropFilter: 'blur(8px)',
                   WebkitBackdropFilter: 'blur(8px)',
                   border: '1px solid rgba(0,0,0,0.08)',
