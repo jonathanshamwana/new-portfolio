@@ -7,3 +7,77 @@
     transform: none !important;
     border-radius: 10px;
 }
+
+/* Segmented tab toggle */
+.internship-tabs {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    margin: 0 auto 1rem;
+    padding: 4px;
+    border-radius: 9999px;
+    background: rgba(165, 186, 161, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.internship-tab-indicator {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+    border-radius: 9999px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(248, 219, 188, 0.9));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.internship-tab {
+    position: relative;
+    z-index: 1;
+    min-width: 130px;
+    padding: 0.5rem 1.75rem;
+    border: none;
+    background: transparent;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.internship-tab:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.internship-tab.is-active {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/* Content cross-fade / slide-in on tab change */
+.internship-panel {
+    animation: internship-panel-in 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes internship-panel-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .internship-tab-indicator,
+    .internship-panel {
+        transition: none;
+        animation: none;
+    }
+}

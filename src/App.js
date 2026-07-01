@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css"
 import Footer from "./components/Footer"
-import PaintCanvas from "./components/PaintCanvas"
 import RunwayProject from "./pages/projects/Runway";
 import Now from "./pages/Now"
 import People from "./pages/People"
@@ -13,7 +12,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 export default function App() {
   return (
     <BrowserRouter>
-        {process.env.REACT_APP_PAINT_CANVAS === 'true' && <PaintCanvas />}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/now" element={<Now />} />

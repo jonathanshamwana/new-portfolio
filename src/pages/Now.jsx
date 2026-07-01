@@ -13,6 +13,10 @@ const getTagColor = (tag) => {
       return 'bg-pink-200 text-pink-800';
     case 'running':
       return 'bg-yellow-200 text-yellow-800';
+    case 'reading':
+      return 'bg-purple-200 text-purple-800';
+    case 'life':
+      return 'bg-teal-200 text-teal-800';
     default:
       return 'bg-gray-200 text-gray-800';
   }

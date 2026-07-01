@@ -18,11 +18,21 @@
 }
 
 .read-more-button {
-    color: #0A400C !important;
-    transition: transform 0.2s ease;
+    height: auto !important;
+    padding: 0.5rem 1.75rem !important;
+    border-radius: 9999px !important;
+    font-weight: 500 !important;
+    color: rgba(0, 0, 0, 0.9) !important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(248, 219, 188, 0.9)) !important;
+    border: 1px solid rgba(165, 186, 161, 0.5) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease !important;
 }
 
-.read-more-button:hover {
-    color: #0A400C !important;
-    transform: scale(1.05);
+.read-more-button:hover,
+.read-more-button:focus {
+    color: rgba(0, 0, 0, 0.9) !important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(248, 219, 188, 1)) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
 }
